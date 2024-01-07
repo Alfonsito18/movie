@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 110vh;
+  background: linear-gradient(#1c1917 50%, #ffb92a 50%);
+}
+body .container {
+  font-size: 16px;
+  width: 90vw;
+  max-width: 37.5em;
+  padding: 3em 1.8em;
+  background-color: #1e293b;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 0.6em;
+  box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
+}
+body .container .search-container {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1.2em;
+}
+body .container .search-container button {
+  outline: none;
+  font-size: 0.9em;
+  border-radius: 0.3em;
+  background-color: #ffb92a;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+body .container .search-container button:hover {
+  background: transparent;
+  color: #fff;
+  border: solid 2px #fff;
+  font-weight: bold;
+}
+body .container .search-container input {
+  background-color: transparent;
+  border: solid 1px #a0a0a0;
+  color: #fff;
+  padding: 0.7em;
+}
+body .container .search-container input:focus {
+  color: #fff;
+}
+body .container #result {
+  color: #fff;
+}
+body .container .info {
+  position: relative;
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  margin-top: 1.2em;
+}
+body .container .poster {
+  width: 100%;
+}
+body .container h2 {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+body .container .rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6em;
+  margin: 0.6em 0 0.9em 0;
+}
+body .container .rating img {
+  width: 1.2em;
+}
+body .container .rating h4 {
+  font-size: 1.1em;
+  display: inline-block;
+  font-weight: 500;
+}
+body .container .details {
+  display: flex;
+  font-size: 0.95em;
+  gap: 1em;
+  justify-content: center;
+  color: #a0a0a0;
+  margin: 0.6em 0;
+  font-weight: 300;
+}
+body .container .genre {
+  display: flex;
+  justify-content: space-around;
+}
+body .container .genre div {
+  border: 1px solid #a0a0a0;
+  font-size: 0.75em;
+  padding: 0.4em 1.6em;
+  border-radius: 0.4em;
+  font-weight: 300;
+  transition: 0.7s;
+}
+body .container .genre div:hover {
+  background-color: #ffb92a;
+  font: bold;
+}
+body .container h3 {
+  font-weight: 500;
+  margin-top: 1.5em;
+}
+body .container p {
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 1.8em;
+  text-align: justify;
+  color: #a0a0a0;
+}
+body .container .msg {
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  body .container .container {
+    font-size: 14px;
+  }
+  body .container .container .poster {
+    width: auto;
+    margin: auto;
+    max-height: 10.8em;
+  }
+}/*# sourceMappingURL=styles.css.map */
